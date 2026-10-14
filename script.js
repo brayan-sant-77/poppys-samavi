@@ -1,7 +1,7 @@
 // PERSONALIZE os dados reais da Poppys antes de publicar.
 const POPPYS = {
-  whatsapp: "5577998201230", // Somente números: 55 + DDD + número. Ex.: 5577999999999
-  phoneDisplay: "(77) 9 9820-1230", // Formato de exibição do telefone
+  whatsapp: "557791406862", 
+  phoneDisplay: "(77) 9 9140-6862", 
   address: "R. Nilo Peçanha, 78 - Centro, Santa Maria da Vitória - BA",
   hours: "Segunda a sábado: 18h às 23h\nDomingo: 18h às 22h",
   mapQuery: "Poppys hamburgueria Santa Maria da Vitória Bahia"
