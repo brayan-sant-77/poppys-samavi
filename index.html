@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160d0a">
+  <meta name="description" content="Poppys — hambúrguer de verdade, feito com carinho.">
+  <title>Poppys | Sabor que é pura felicidade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Poppys início"><img src="assets/logo.jpg" alt="Logo Poppys"><span
+        class="brand-word">POPPYS</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"
+      aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#inicio">INÍCIO</a><a href="#cardapio">CARDÁPIO</a><a href="#combos">COMBOS</a><a
+        href="#contato">CONTATO</a>
+    </nav>
+    <div class="header-right">
+      <span class="sun">☼</span><button id="themeToggle" class="theme-toggle"
+        aria-label="Alternar tema"><span></span></button><span class="moon">☾</span>
+      <a class="order-button" data-whatsapp href="#" target="_blank" rel="noopener"><span class="wa-icon">◉</span> PEDIR
+        AGORA</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-photo"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="scribble-intro">HAMBÚRGUER DE VERDADE,<br>FEITO COM CARINHO!</p>
+        <h1>SABOR QUE<br><em>É PURA FELICIDADE</em></h1>
+        <p class="hero-description">Aqui o hambúrguer é mais que comida,<br>é uma experiência!</p>
+        <a class="pill-button" href="#cardapio"><span>☰</span> VER CARDÁPIO <b>›</b></a>
+      </div>
+      <div class="hero-note">Ingredientes<br>selecionados<br>e muito sabor! <span>↙</span></div>
+      <div class="hero-bottom"><span>FEITO NA HORA</span><i>✳</i><span>DO JEITO QUE VOCÊ GOSTA</span></div>
+    </section>
+
+    <section class="menu-section" id="cardapio">
+      <div class="menu-layout">
+        <div class="menu-main">
+          <div class="section-title">
+            <div><span class="red-stroke"></span>
+              <h2>NOSSO CARDÁPIO</h2>
+            </div>
+            <p>Cada mordida<br>é uma surpresa! <b>↘</b></p>
+          </div>
+          <div class="products">
+            <article class="product"><img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=85"
+                alt="Hambúrguer artesanal clássico">
+              <div class="product-copy">
+                <h3>X-BURGUER</h3>
+                <p>Pão brioche, hambúrguer 150g, queijo cheddar, alface, tomate e molho especial.</p>
+                <div class="price-row"><strong>R$ 18,90</strong><a class="add" data-whatsapp href="#"
+                    aria-label="Pedir X-Burguer" data-order="X-Burguer">+</a></div>
+              </div>
+            </article>
+            
+            <article class="product"><img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=85"
+                alt="Hambúrguer duplo"
+                onerror="this.src='https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=85'">
+              <div class="product-copy">
+                <h3>X-DOUBLE</h3>
+                <p>Pão brioche, dois hambúrgueres 150g, queijo cheddar, alface, tomate e molho especial.</p>
+                <div class="price-row"><strong>R$ 26,90</strong><a class="add" data-whatsapp href="#"
+                    aria-label="Pedir X-Double" data-order="X-Double">+</a></div>
+              </div>
+            </article>
+            <article class="product">
+              <img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=85"
+                alt="Hambúrguer artesanal com salada">
+              <div class="product-copy">
+                <h3>X-FRANGO</h3>
+                <p>Pão brioche, filé de frango crocante, queijo cheddar, alface, tomate e molho especial.</p>
+                <div class="price-row"><strong>R$ 19,90</strong><a class="add" data-whatsapp href="#"
+                    aria-label="Pedir X-Frango" data-order="X-Frango">+</a></div>
+              </div>
+            </article>
+
+            <article class="product">
+              <img
+                src="assets/hamburguerTest.jpg"
+                alt="Hambúrguer artesanal com salada">
+              <div class="product-copy">
+                <h3>BURGUER-TEST</h3>
+                <p>Pão brioche, filé de frango crocante, queijo cheddar, alface, tomate e molho especial.</p>
+                <div class="price-row"><strong>R$ 19,90</strong><a class="add" data-whatsapp href="#"
+                    aria-label="Pedir Burguer-Test" data-order="Burguer-Test">+</a></div>
+
+            </article>
+          </div>
+          <small class="disclaimer">*Cardápio demonstrativo: confirme produtos e preços antes de publicar.</small>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="combos-section" id="combos">
+      <div class="combos-inner">
+        <div class="combos-heading">
+          <span class="eyebrow">PRA MATAR A FOME DE VERDADE</span>
+          <h2>COMBOS <em>POPPYS</em></h2>
+          <p>Seu hambúrguer favorito com acompanhamentos para deixar o pedido completo.</p>
+        </div>
+        <div class="combo-grid">
+          <article class="combo-card">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85"
+              alt="Batatas fritas crocantes" loading="lazy">
+            <div class="combo-card-copy"><span class="combo-tag">CLÁSSICO</span>
+              <h3>COMBO X-BURGUER</h3>
+              <p>X-Burguer + batata frita + bebida.</p>
+              <div class="combo-price-row"><strong>R$ 27,90</strong><a data-whatsapp data-order="Combo X-Burguer"
+                  href="#contato">PEDIR COMBO <b>›</b></a></div>
+            </div>
+          </article>
+          
+          <article class="combo-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+              alt="Hambúrguer duplo artesanal" loading="lazy">
+            <div class="combo-card-copy"><span class="combo-tag">PRA VALER</span>
+              <h3>COMBO X-DOUBLE</h3>
+              <p>X-Double + batata frita + bebida.</p>
+              <div class="combo-price-row"><strong>R$ 36,90</strong><a data-whatsapp data-order="Combo X-Double"
+                  href="#contato">PEDIR COMBO <b>›</b></a></div>
+            </div>
+          </article>
+
+          <article class="combo-card">
+            <img src="assets/hamburguerTest.jpg"
+              alt="Batatas fritas crocantes" loading="lazy">
+            <div class="combo-card-copy"><span class="combo-tag">CLÁSSICO</span>
+              <h3>COMBO X-TEST</h3>
+              <p>X-Test + batata frita + bebida + casquinha.</p>
+              <div class="combo-price-row"><strong>R$ 27,90</strong><a data-whatsapp data-order="Combo X-Burguer"
+                  href="#contato">PEDIR COMBO <b>›</b></a></div>
+            </div>
+          </article>
+
+        </div>
+        <small class="combo-disclaimer">*Combos e valores ilustrativos. Ajuste conforme o cardápio real da
+          Poppys.</small>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div class="contact-grid">
+        <div class="contact-column">
+          <div class="contact-item"><span class="contact-icon">◷</span>
+            <div>
+              <h3>HORÁRIO DE FUNCIONAMENTO</h3>
+              <p data-hours>Segunda a sábado: 18h às 23h<br>Domingo: 18h às 22h</p>
+            </div>
+          </div>
+          <div class="contact-item"><span class="contact-icon">◉</span>
+            <div>
+              <h3>CONTATO</h3>
+              <p data-phone>(77) 99982-01230</p><a class="small-red-button" data-whatsapp href="#">◉ &nbsp; CHAMAR NO
+                WHATSAPP</a>
+            </div>
+          </div>
+        </div>
+        <div class="location-column">
+          <div class="contact-item"><span class="contact-icon pin">♥</span>
+            <div>
+              <h3>NOSSA LOCALIZAÇÃO</h3>
+              <p data-address>R. Nilo Peçanha, 78 — Centro<br>Santa Maria da Vitória - BA</p><a class="small-red-button" data-maps
+                href="#" target="_blank" rel="noopener">▧ &nbsp; VER NO GOOGLE MAPS</a>
+            </div>
+          </div>
+          <p class="handwritten">Estamos te esperando!</p>
+        </div>
+        <div class="map-wrap"><iframe title="Mapa da Poppys" data-map
+            src="https://www.google.com/maps?q=R.+Nilo+Peçanha,+78+-+Centro,+Santa+Maria+da+Vitória+-+BA&output=embed" loading="lazy"></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="sobre">
+    <a class="footer-brand" href="#inicio"><img src="assets/logo.jpg" alt=""><span><strong>POPPYS</strong><small>Sabor,
+          qualidade e tradição!</small></span></a>
+    <div class="footer-message"><strong>FEITO NA HORA, DO NOSSO JEITO.</strong><small>Obrigado por escolher a
+        Poppys.</small></div>
+    <nav><a href="#inicio">INÍCIO</a><a href="#cardapio">CARDÁPIO</a><a href="#combos">COMBOS</a><a
+        href="#contato">CONTATO</a></nav>
+  </footer>
+</body>
+
+</html>
